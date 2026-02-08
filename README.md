@@ -67,7 +67,7 @@ Free tier users on OpenRouter (50 req/day) and Cerebras (1M tokens/day) create m
 ## 🚀 Quick Start
 
 ### Option 1: Use Directly (Recommended)
-1. Visit: **[Your GitHub Pages URL]** *(deploy and add link here)*
+1. Visit: **https://github.com/Samyk000/APIUsageTracker.git** *(deploy and add link here)*
 2. Bookmark it on desktop and mobile
 3. Add your API keys
 4. Done! 🎉
@@ -75,7 +75,7 @@ Free tier users on OpenRouter (50 req/day) and Cerebras (1M tokens/day) create m
 ### Option 2: Self-Host
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/api-usage-tracker.git
+git clone https://github.com/Samyk000/APIUsageTracker.git
 
 # Open index.html in any browser
 open index.html
