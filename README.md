@@ -1,4 +1,4 @@
-# 🎯 API Usage Tracker - Never Lose Track Again
+# 🎯 API Tracker - Never Lose Track Again
 
 **A sleek, single-file web app to monitor your OpenRouter & Cerebras AI API usage across multiple keys in real-time.**
 
