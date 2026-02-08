@@ -212,8 +212,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-**Why MIT?** It's the most permissive open-source license. Anyone can use, modify, or distribute this tool freely - perfect for a community tool.
-
 ***
 
 ## 🙏 Acknowledgments
