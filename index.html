@@ -62,7 +62,6 @@
     .ic svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
     .app{display:flex;min-height:100vh;min-height:100dvh}
 
-    /* SIDEBAR */
     .sb{width:var(--sw);background:var(--bg2);border-right:1px solid var(--div);position:fixed;top:0;left:0;bottom:0;z-index:50;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.4,0,.2,1)}
     .sb-hd{padding:20px 18px;border-bottom:1px solid var(--div)}
     .sb-br{display:flex;align-items:center;gap:12px}
@@ -86,10 +85,8 @@
     .sb-ft{padding:10px;border-top:1px solid var(--div);display:none}
     .sb-ft .nbtn{color:var(--t3)}.sb-ft .nbtn:hover{color:var(--t2)}
 
-    /* MAIN */
     .mn{flex:1;margin-left:var(--sw);min-height:100vh;min-height:100dvh}
 
-    /* HEADER */
     .hdr{position:sticky;top:0;z-index:40;background:rgba(244,246,251,.82);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);border-bottom:1px solid var(--div);height:var(--hh);display:flex;align-items:center;padding:0 20px;gap:12px;transition:background .3s ease}
     .theme-midnight .hdr{background:rgba(11,15,26,.82)}
     .theme-mocha .hdr{background:rgba(28,20,16,.85)}
@@ -118,7 +115,6 @@
     .badd:active{transform:scale(.97)}.badd .ic{width:15px;height:15px}
     .ct{padding:20px 24px 80px;max-width:1280px;margin:0 auto}
 
-    /* BANNER */
     .dbanner{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;border-radius:var(--r);margin-bottom:20px;font-size:13px;color:var(--t2);line-height:1.55}
     .dbanner.or-b{background:var(--orl);border:1px solid var(--orl2)}.dbanner.cb-b{background:var(--cbl);border:1px solid var(--cbl2)}
     .dbanner .ic{flex-shrink:0;margin-top:2px;width:17px;height:17px}
@@ -127,10 +123,8 @@
     .dbanner .dismiss{margin-left:auto;background:0;border:none;color:var(--t3);cursor:pointer;padding:5px;border-radius:7px;display:flex;flex-shrink:0;transition:all .2s ease}
     .dbanner .dismiss:hover{color:var(--t2);background:rgba(0,0,0,.04)}.dbanner .dismiss .ic{width:15px;height:15px}
 
-    /* GRID */
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(370px,1fr));gap:14px}
 
-    /* CARD */
     .cd{background:var(--card);border:1px solid var(--card-b);border-radius:var(--r);box-shadow:var(--s-card);transition:all .3s cubic-bezier(.4,0,.2,1);animation:ci .4s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden}
     .cd:hover{box-shadow:var(--s-card-h);transform:translateY(-2px)}
     .cd.rm{animation:co .3s ease forwards;pointer-events:none}
@@ -205,12 +199,10 @@
     .empty h3{font-size:18px;font-weight:700;margin-bottom:6px;letter-spacing:-.3px}
     .empty p{font-size:13px;color:var(--t2);max-width:280px;line-height:1.6}
 
-    /* FAB */
     .fab{position:fixed;bottom:24px;right:20px;width:52px;height:52px;border-radius:16px;border:none;background:linear-gradient(135deg,var(--or),var(--cb));color:#fff;cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(124,58,237,.35);transition:all .3s cubic-bezier(.4,0,.2,1);z-index:90}
     .fab .ic{width:22px;height:22px;transition:transform .3s cubic-bezier(.4,0,.2,1)}
     .fab:hover{transform:scale(1.08)}.fab:active{transform:scale(.92)}.fab.open .ic{transform:rotate(45deg)}
 
-    /* MODALS */
     .mov{position:fixed;inset:0;z-index:1000;background:var(--ov);display:none;align-items:center;justify-content:center;-webkit-backdrop-filter:blur(16px) saturate(150%);backdrop-filter:blur(16px) saturate(150%)}
     .mov.on{display:flex;animation:fi .2s ease}
     @keyframes fi{from{opacity:0}to{opacity:1}}
@@ -297,15 +289,12 @@
 
     .sbov{display:none;position:fixed;inset:0;z-index:49;background:var(--ov)}.sbov.on{display:block;animation:fi .2s ease}
 
-    /* Mobile info strip */
     .mob-info{display:none}
 
-    /* ===== MOBILE ===== */
     @media(max-width:900px){
       :root{--hh:50px}
       .sb{display:none!important}.sbov{display:none!important}
       .mn{margin-left:0}
-
       .hdr{padding:0 10px;gap:6px;justify-content:space-between}
       .hdr-logo{width:32px;height:32px;border-radius:8px;flex-shrink:0}
       .hdr-logo .ic{width:15px;height:15px}
@@ -315,8 +304,6 @@
       .hts{display:none}
       .badd{display:none}
       #refBtn{display:none!important}
-
-      /* Mobile tabs IN header center */
       .hdr-center{flex:1;justify-content:center;gap:4px}
       .mob-ht{display:flex;align-items:center;gap:6px;padding:7px 12px;border-radius:6px;border:1.5px solid var(--div);background:var(--bg);font:600 12px var(--f);color:var(--t2);cursor:pointer;white-space:nowrap;transition:all .2s ease;flex-shrink:0;-webkit-tap-highlight-color:transparent}
       .mob-ht:active{transform:scale(.95)}
@@ -326,15 +313,10 @@
       .mob-ht .ncnt{font-size:10px;font-weight:800;min-width:18px;height:18px;display:flex;align-items:center;justify-content:center;border-radius:4px;background:var(--div);color:var(--t3);margin-left:1px}
       .mob-ht.on .ncnt{background:currentColor}
       .mob-ht.on .ncnt-txt{color:var(--bg2)}
-
       .mob-set-btn{display:flex!important}
-
-      /* Info strip */
       .mob-info{display:flex;align-items:center;justify-content:center;gap:6px;padding:8px 14px;background:var(--bg2);border-bottom:1px solid var(--div);position:sticky;top:var(--hh);z-index:38;overflow-x:auto;-webkit-overflow-scrolling:touch}
       .mob-info .hchip{padding:4px 10px;font-size:11px;flex-shrink:0;border-radius:16px}
-
       .ct{padding:12px 10px 90px}.grid{grid-template-columns:1fr;gap:8px}
-
       .cd-body{padding:12px 14px 10px}
       .cd-r1{margin-bottom:8px;gap:10px}
       .cd-bg{width:36px;height:36px;border-radius:10px;font-size:11px}
@@ -347,14 +329,10 @@
       .pbar{height:4px}
       .mlims{gap:3px;margin-bottom:8px}.ml{padding:3px 6px;font-size:9px;border-radius:5px}
       .cd-ft{padding-top:5px}.met{font-size:10px;gap:3px}.met .ic{width:11px;height:11px}
-
       .empty{padding:50px 16px}.emp-ic{width:56px;height:56px;border-radius:16px}.emp-ic .ic{width:26px;height:26px}
       .empty h3{font-size:16px}.empty p{font-size:12px}
-
       .fab{display:flex}
-
       .dbanner{margin-bottom:12px;padding:10px 12px;font-size:12px;border-radius:var(--rs)}
-
       .mdl{border-radius:20px 20px 0 0;position:fixed;bottom:0;left:0;right:0;max-width:100%;margin:0;animation:su .35s cubic-bezier(.4,0,.2,1);max-height:92vh}
       .mdl::before{content:'';display:block;width:34px;height:4px;border-radius:2px;background:var(--t4);margin:8px auto 0}
       .mdl-h{padding:12px 18px}.mdl-b{padding:14px 18px 20px}
@@ -401,19 +379,13 @@
     </aside>
     <main class="mn">
       <header class="hdr">
-        <!-- Mobile: logo -->
         <div class="hdr-logo"><span class="ic"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span></div>
-
-        <!-- Desktop: title -->
         <div class="hdr-l"><span class="pgt"><span class="pgd or" id="pgD"></span><span id="pgN">OpenRouter</span></span></div>
         <div class="hchips" id="hChips"></div>
-
-        <!-- Mobile tabs centered -->
         <div class="hdr-center" id="mobHTabs">
           <button class="mob-ht on" data-tab="openrouter" onclick="setTab('openrouter')"><span class="ndot or"></span>OpenRouter<span class="ncnt" id="ncOrM"><span class="ncnt-txt">0</span></span></button>
           <button class="mob-ht" data-tab="cerebras" onclick="setTab('cerebras')"><span class="ndot cb"></span>Cerebras<span class="ncnt" id="ncCbM"><span class="ncnt-txt">0</span></span></button>
         </div>
-
         <div class="hdr-r">
           <span class="hts" id="lastUp">—</span>
           <button class="ib" id="refBtn" onclick="refreshAll()" title="Refresh"><span class="ic"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M20.49 15a9 9 0 0 1-14.85 3.36L1 14"/></svg></span></button>
@@ -530,38 +502,101 @@ async function refreshFromSet(){const b=document.getElementById('setRefBtn');b.c
 async function copyK(id){const k=S.keys.find(x=>x.id===id);if(!k)return;try{await navigator.clipboard.writeText(k.apiKey);const b=document.getElementById('cp-'+id);if(b){b.classList.add('ok');b.innerHTML=`<span class="ic">${IC.chk}</span>`;setTimeout(()=>{b.classList.remove('ok');b.innerHTML=`<span class="ic">${IC.cp}</span>`},1500)}toast('Copied','success')}catch(e){toast('Copy failed','error')}}
 function togRv(id){const el=document.getElementById('kt-'+id),btn=document.getElementById('rv-'+id),k=S.keys.find(x=>x.id===id);if(!el||!k)return;if(S.revealed.has(id)){S.revealed.delete(id);el.textContent=mask(k.apiKey);el.classList.remove('vis');if(btn)btn.innerHTML=`<span class="ic">${IC.eye}</span>`}else{S.revealed.add(id);el.textContent=k.apiKey;el.classList.add('vis');if(btn)btn.innerHTML=`<span class="ic">${IC.eoff}</span>`}}
 
+/* ===== BUG 1 FIX: OpenRouter Free Tier ===== */
 async function fetchOR(apiKey){
   const r=await fetch('https://openrouter.ai/api/v1/auth/key',{headers:{'Authorization':'Bearer '+apiKey}});
   if(r.status===401||r.status===403)throw new Error('Invalid API key');
   if(r.status===429)throw new Error('Rate limited — try again later');
-  if(r.status===204)return{usage:0,limit:0.5,percent:0,isUnlimited:false,dispU:'$0.0000',dispL:'$0.5000',resetLabel:'Resets in '+resetT(),serverLabel:null,limits:{'Daily':LIMITS.openrouter.free.daily+' req','Per Min':LIMITS.openrouter.free.perMin+' req','Plan':'Free Tier'}};
+
+  // Handle 204 No Content
+  if(r.status===204)return{usage:0,limit:50,percent:0,isUnlimited:false,dispU:'0 req',dispL:'50 req',resetLabel:'Resets in '+resetT(),serverLabel:null,limits:{'Daily':'50 req','Per Min':'20 req','Plan':'Free Tier'}};
+
   if(!r.ok)throw new Error('HTTP '+r.status);
-  let data;try{data=await r.json()}catch(e){return{usage:0,limit:0.5,percent:0,isUnlimited:false,dispU:'$0.0000',dispL:'$0.5000',resetLabel:'Resets in '+resetT(),serverLabel:null,limits:{'Daily':LIMITS.openrouter.free.daily+' req','Per Min':LIMITS.openrouter.free.perMin+' req','Plan':'Free Tier'}}}
-  if(!data||!data.data)return{usage:0,limit:0.5,percent:0,isUnlimited:false,dispU:'$0.0000',dispL:'$0.5000',resetLabel:'Resets in '+resetT(),serverLabel:null,limits:{'Daily':LIMITS.openrouter.free.daily+' req','Per Min':LIMITS.openrouter.free.perMin+' req','Plan':'Free Tier'}};
-  const usage=data.data.usage||0,limit=data.data.limit;
-  const isUnlimited=limit===null||limit===undefined||limit===0;
-  let effectiveLimit=isUnlimited?null:limit,plan='Free Tier';
-  if(!isUnlimited&&limit>1)plan='Paid';else if(isUnlimited)plan='Unlimited';
-  const displayLimit=isUnlimited?'Unlimited':fc(effectiveLimit);
-  const pct=isUnlimited?0:Math.min(100,(usage/effectiveLimit)*100);
-  return{usage,limit:effectiveLimit,percent:pct,isUnlimited,dispU:fc(usage),dispL:displayLimit,resetLabel:'Resets in '+resetT(),serverLabel:data.data.label||null,limits:{'Daily':LIMITS.openrouter.free.daily+' req','Per Min':LIMITS.openrouter.free.perMin+' req','Plan':plan}}
+
+  let data;
+  try{data=await r.json()}catch(e){return{usage:0,limit:50,percent:0,isUnlimited:false,dispU:'0 req',dispL:'50 req',resetLabel:'Resets in '+resetT(),serverLabel:null,limits:{'Daily':'50 req','Per Min':'20 req','Plan':'Free Tier'}}}
+
+  if(!data||!data.data)return{usage:0,limit:50,percent:0,isUnlimited:false,dispU:'0 req',dispL:'50 req',resetLabel:'Resets in '+resetT(),serverLabel:null,limits:{'Daily':'50 req','Per Min':'20 req','Plan':'Free Tier'}};
+
+  // CHECK FREE TIER FIRST
+  const isFree = data.data.is_free_tier === true;
+  const rawLimit = data.data.limit;
+  const usage = data.data.usage || 0;
+
+  // If free tier AND limit is null, use 50
+  let effectiveLimit = rawLimit;
+  if (isFree && (rawLimit === null || rawLimit === 0)) {
+    effectiveLimit = 50;
+  }
+
+  // Check unlimited ONLY if not free tier
+  const isUnlimited = !isFree && (effectiveLimit === null || effectiveLimit === 0);
+
+  let plan = 'Free Tier';
+  if (!isFree && effectiveLimit && effectiveLimit > 50) plan = 'Paid';
+  else if (isUnlimited) plan = 'Unlimited';
+
+  const displayLimit = isUnlimited ? 'Unlimited' : effectiveLimit + ' req';
+  const displayUsage = usage + ' req';
+  const pct = isUnlimited ? 0 : Math.min(100, (usage / effectiveLimit) * 100);
+
+  return {
+    usage,
+    limit: effectiveLimit,
+    percent: pct,
+    isUnlimited,
+    dispU: displayUsage,
+    dispL: displayLimit,
+    resetLabel: 'Resets in ' + resetT(),
+    serverLabel: data.data.label || null,
+    limits: {
+      'Daily': effectiveLimit + ' req',
+      'Per Min': '20 req',
+      'Plan': plan
+    }
+  };
 }
 
+/* ===== BUG 2 FIX: Cerebras Small Token Display ===== */
 async function fetchCB(apiKey){
   const r=await fetch('https://api.cerebras.ai/v1/chat/completions',{method:'POST',headers:{'Authorization':'Bearer '+apiKey,'Content-Type':'application/json'},body:JSON.stringify({model:'llama3.1-8b',messages:[{role:'user',content:'hi'}],max_tokens:1})});
+
   if(r.status===401||r.status===403)throw new Error('Invalid API key');
   if(r.status===429)throw new Error('Rate limited — try again later');
   if(!r.ok)throw new Error('HTTP '+r.status);
-  const limitDay=parseInt(r.headers.get('x-ratelimit-limit-tokens-day'))||0,remainDay=parseInt(r.headers.get('x-ratelimit-remaining-tokens-day'))||0;
+
+  const limitDay=parseInt(r.headers.get('x-ratelimit-limit-tokens-day'))||0;
+  const remainDay=parseInt(r.headers.get('x-ratelimit-remaining-tokens-day'))||0;
   const limitMin=parseInt(r.headers.get('x-ratelimit-limit-tokens-minute'))||0;
-  const limitReqDay=parseInt(r.headers.get('x-ratelimit-limit-requests-day'))||0,remainReqDay=parseInt(r.headers.get('x-ratelimit-remaining-requests-day'))||0;
+  const limitReqDay=parseInt(r.headers.get('x-ratelimit-limit-requests-day'))||0;
+  const remainReqDay=parseInt(r.headers.get('x-ratelimit-remaining-requests-day'))||0;
   const limitReqMin=parseInt(r.headers.get('x-ratelimit-limit-requests-minute'))||0;
-  const limitFallback=parseInt(r.headers.get('x-ratelimit-limit-tokens'))||0,remainFallback=parseInt(r.headers.get('x-ratelimit-remaining-tokens'))||0;
-  const effectiveLimit=limitDay||limitFallback||LIMITS.cerebras.free.daily;
-  const effectiveRemain=limitDay?remainDay:(limitFallback?remainFallback:effectiveLimit);
-  const used=effectiveLimit-effectiveRemain,usedReqDay=limitReqDay>0?(limitReqDay-remainReqDay):0;
-  const pct=effectiveLimit>0?Math.min(100,(used/effectiveLimit)*100):0;
-  return{usage:used,limit:effectiveLimit,percent:pct,isUnlimited:false,dispU:fn(used)+' tok',dispL:fn(effectiveLimit)+' tok',resetLabel:'Continuous reset',serverLabel:null,limits:{'Tok Used':fn(used)+'/'+fn(effectiveLimit),'Req Today':fn(usedReqDay)+'/'+fn(limitReqDay||LIMITS.cerebras.free.reqDay),'Tok/Min':fn(limitMin||LIMITS.cerebras.free.perMin),'Req/Min':String(limitReqMin||LIMITS.cerebras.free.reqMin)}}
+
+  const effectiveLimit = limitDay || 1000000;
+  const used = effectiveLimit - remainDay;
+  const usedReqDay = limitReqDay > 0 ? (limitReqDay - remainReqDay) : 0;
+  const pct = effectiveLimit > 0 ? Math.min(100, (used / effectiveLimit) * 100) : 0;
+
+  // FIX: Show exact numbers for small usage
+  const displayUsage = used < 1000 ? used.toString() + ' tok' : fn(used) + ' tok';
+  const displayLimit = fn(effectiveLimit) + ' tok';
+
+  return {
+    usage: used,
+    limit: effectiveLimit,
+    percent: pct,
+    isUnlimited: false,
+    dispU: displayUsage,
+    dispL: displayLimit,
+    resetLabel: 'Continuous reset',
+    serverLabel: null,
+    limits: {
+      'Tok Used': fn(used) + '/' + fn(effectiveLimit),
+      'Req Today': fn(usedReqDay) + '/' + fn(limitReqDay || 14400),
+      'Tok/Min': fn(limitMin || 60000),
+      'Req/Min': String(limitReqMin || 30)
+    }
+  };
 }
 
 async function fetchU(k){try{const r=k.provider==='openrouter'?await fetchOR(k.apiKey):await fetchCB(k.apiKey);r.lastChecked=new Date().toISOString();r.error=null;S.cache[k.id]=r;return r}catch(e){S.cache[k.id]={...(S.cache[k.id]||{}),error:e.message,lastChecked:new Date().toISOString()};throw e}}
@@ -597,7 +632,10 @@ function updC(id){
   const hp=document.getElementById('hp-'+id),hd=document.getElementById('hd-'+id),hl=document.getElementById('hl-'+id),pw=document.getElementById('pw-'+id),pf=document.getElementById('pf-'+id);
   if(c.isUnlimited){hp.className='pill u';hd.className='pd u';hl.textContent='Unlimited';pw.style.display='none'}
   else{const s=hs(c.percent);hp.className='pill '+s;hd.className='pd '+s;
-    hl.textContent=c.percent<0.01&&c.usage===0?'0%':c.percent.toFixed(c.percent<1?2:0)+'%';
+    if(c.percent===0){hl.textContent='0%'}
+    else if(c.percent<0.01){hl.textContent=c.percent.toFixed(4)+'%'}
+    else if(c.percent<1){hl.textContent=c.percent.toFixed(2)+'%'}
+    else{hl.textContent=c.percent.toFixed(0)+'%'}
     pw.style.display='';const k=S.keys.find(x=>x.id===id);
     let fc2=k?.provider==='openrouter'?'or':'cb';
     if(c.percent>85)fc2='d';else if(c.percent>50)fc2='w';
